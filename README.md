@@ -15,22 +15,25 @@ A computer vision-based application that helps maintain good posture by monitori
 
 ### Calibration Process
 ![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Calibration.png)
+
 The system calibrates to your natural posture in the first 30 frames.
 
 ### Good Posture Detection
 ![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Good%20Posture.png)
+
 Green indicators show when posture is maintained within acceptable ranges.
 
 ### Poor Posture Detection
 ![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Bad%20Posture.png)
+
 Red indicators and specific feedback when posture correction is needed.
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/posture-corrector.git
-cd posture-corrector
+git clone https://github.com/Meghanshgovil/Posture-Detection-Tool.git
+cd Posture-Detection-Tool
 ```
 
 2. Create and activate a virtual environment (recommended):
