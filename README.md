@@ -1,115 +1,92 @@
-# AI Posture Analysis Tool 🧍‍♂️
+# Real-time Posture Corrector
 
-An intelligent posture detection and correction system that helps users maintain proper spinal alignment and identify common postural deviations in real-time.
+A computer vision-based application that helps maintain good posture by monitoring shoulder and neck alignment in real-time using your webcam.
 
-## Features 🌟
+## Features
 
-- Real-time posture analysis using computer vision
-- Detection and classification of common postural deviations
-- Immediate feedback for posture correction
-- Progress tracking and reporting
-- User-friendly interface for easy monitoring
+- Real-time posture detection and monitoring
+- Visual feedback with angle measurements
+- Calibration system for personalized posture thresholds
+- Audio alerts for poor posture
+- Color-coded status indicators
+- Detailed angle measurements and visualization
 
-## Postural Deviations Detected 🔍
+## Demo
 
-### 1. Kyphosis (Round Back)
-![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/d784e4490962aadb301d59511ae95376b9c48a80/Kyphosis.png)
+### Calibration Process
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Calibration.png)
+The system calibrates to your natural posture in the first 30 frames.
 
-**Characteristics:**
-- Excessive rounding of upper back
-- Forward head position
-- Rounded shoulders
+### Good Posture Detection
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Good%20Posture.png)
+Green indicators show when posture is maintained within acceptable ranges.
 
-**Solutions:**
-- Extension exercises
-- Core strengthening
-- Chin tucks
-- Shoulder blade squeezes
+### Poor Posture Detection
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/1973443b1c2780f0b989e0573614b9376f40c8a7/Bad%20Posture.png)
+Red indicators and specific feedback when posture correction is needed.
 
-### 2. Lordosis (Swayback)
-![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Lordosis.png)
+## Installation
 
-**Characteristics:**
-- Excessive inward curve of lower back
-- Tilted pelvis
-- Protruding abdomen
-
-**Solutions:**
-- Pelvic tilts
-- Hamstring stretches
-- Core strengthening
-- Hip flexor stretches
-
-### 3. Flat Back
-![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Flat_Back.png)
-
-**Characteristics:**
-- Reduced natural spine curves
-- Tight hamstrings
-- Poor pelvic position
-
-**Solutions:**
-- Spine mobility exercises
-- Posture awareness training
-- Lower back stretches
-- Hip mobility exercises
-
-### 4. Forward Head Posture (Text Neck)
-![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Forward_Head.png)
-
-**Characteristics:**
-- Head positioned forward of shoulders
-- Increased strain on neck muscles
-- Rounded upper back
-- Shortened chest muscles
-
-**Solutions:**
-- Chin tucks
-- Neck stretches
-- Upper back strengthening
-- Chest stretches
-- Ergonomic workspace setup
-- Regular breaks from screens
-
-## Installation 💻
-
+1. Clone the repository:
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/posture-ai
+git clone https://github.com/yourusername/posture-corrector.git
+cd posture-corrector
+```
 
-# Install dependencies
+2. Create and activate a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install required packages:
+```bash
 pip install -r requirements.txt
+```
 
-# Run the application
+## Required Dependencies
+
+```plaintext
+opencv-python>=4.7.0
+mediapipe>=0.9.0
+numpy>=1.22.0
+playsound>=1.3.0
+```
+
+## Usage
+
+1. Run the main application:
+```bash
 python main.py
 ```
 
-## Requirements 📋
+2. Position yourself in front of the camera with good posture.
 
-- Python 3.8+
-- OpenCV 4.5+
-- TensorFlow 2.x
-- Mediapipe
-- Webcam or camera device
+3. Stay still during the 30-frame calibration period.
 
-## Usage 🎯
+4. The system will start monitoring your posture and provide real-time feedback.
 
-1. Launch the application
-2. Stand 6 feet away from your camera
-3. Ensure your full body is visible
-4. The AI will analyze your posture in real-time
-5. Follow the on-screen corrections and exercises
+### Controls
+- Press 'q' to quit the application
+- The system will automatically alert you when poor posture is detected
+- Visual indicators show current posture status and measurements
 
-## Results Display 📊
+## How It Works
 
-The system provides:
-- Real-time posture analysis
-- Deviation type classification
-- Correction suggestions
-- Progress tracking graphs
-- Exercise demonstrations
+1. **Pose Detection**
+   - Uses MediaPipe Pose to detect body landmarks
+   - Tracks key points including shoulders and ears
 
-## Contributing 🤝
+2. **Angle Calculation**
+   - Measures angles between ears, shoulders, and vertical reference
+   - Compares measurements against calibrated thresholds
+
+3. **Feedback System**
+   - Visual feedback with color-coded indicators
+   - Audio alerts for sustained poor posture
+   - Real-time angle measurements display
+
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -117,13 +94,21 @@ The system provides:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License 📄
+## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments 🙏
+## Acknowledgments
 
-- MediaPipe team for pose estimation
-- OpenCV community
-- TensorFlow team
-- All contributors and testers
+- MediaPipe for the pose detection system
+- OpenCV for image processing capabilities
+- Contributors and maintainers of all dependencies
+
+## Future Improvements
+
+-  Add data logging capabilities
+-  Implement posture history tracking
+-  Add customizable alert sounds
+-  Create a GUI for settings adjustment
+-  Add support for multiple camera inputs
+-  Implement profile saving/loading
