@@ -13,7 +13,7 @@ An intelligent posture detection and correction system that helps users maintain
 ## Postural Deviations Detected 🔍
 
 ### 1. Kyphosis (Round Back)
-<img src="/api/placeholder/600/400" alt="Kyphosis Illustration" />
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/d784e4490962aadb301d59511ae95376b9c48a80/Kyphosis.png)
 
 **Characteristics:**
 - Excessive rounding of upper back
