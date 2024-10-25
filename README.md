@@ -27,7 +27,7 @@ An intelligent posture detection and correction system that helps users maintain
 - Shoulder blade squeezes
 
 ### 2. Lordosis (Swayback)
-<img src="/api/placeholder/600/400" alt="Lordosis Illustration" />
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Lordosis.png)
 
 **Characteristics:**
 - Excessive inward curve of lower back
@@ -41,7 +41,7 @@ An intelligent posture detection and correction system that helps users maintain
 - Hip flexor stretches
 
 ### 3. Flat Back
-<img src="/api/placeholder/600/400" alt="Flat Back Illustration" />
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Flat_Back.png)
 
 **Characteristics:**
 - Reduced natural spine curves
@@ -55,7 +55,7 @@ An intelligent posture detection and correction system that helps users maintain
 - Hip mobility exercises
 
 ### 4. Forward Head Posture (Text Neck)
-<img src="/api/placeholder/600/400" alt="Forward Head Illustration" />
+![Image Alt](https://github.com/MeghanshGovil/Posture-Detection-Tool/blob/ff2d03b4dd88975fa908ffd55ae0e616961829b1/Forward_Head.png)
 
 **Characteristics:**
 - Head positioned forward of shoulders
