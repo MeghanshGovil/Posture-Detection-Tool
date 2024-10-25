@@ -54,19 +54,22 @@ An intelligent posture detection and correction system that helps users maintain
 - Lower back stretches
 - Hip mobility exercises
 
-### 4. Sway Back
-<img src="/api/placeholder/600/400" alt="Sway Back Illustration" />
+### 4. Forward Head Posture (Text Neck)
+<img src="/api/placeholder/600/400" alt="Forward Head Illustration" />
 
 **Characteristics:**
-- Hips and pelvis pushed forward
-- Upper body leaning backward
-- Increased knee extension
+- Head positioned forward of shoulders
+- Increased strain on neck muscles
+- Rounded upper back
+- Shortened chest muscles
 
 **Solutions:**
-- Hip alignment exercises
-- Core stabilization
-- Posture awareness
-- Balance training
+- Chin tucks
+- Neck stretches
+- Upper back strengthening
+- Chest stretches
+- Ergonomic workspace setup
+- Regular breaks from screens
 
 ## Installation 💻
 
@@ -124,11 +127,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - OpenCV community
 - TensorFlow team
 - All contributors and testers
-
-## Support 📮
-
-For support, please email support@posture-ai.com or open an issue in the repository.
-
----
-
-Made with ❤️ by [Your Team Name]
